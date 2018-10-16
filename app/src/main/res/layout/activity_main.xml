@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="578dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="59dp"
+        android:layout_marginTop="30dp"
+        android:nestedScrollingEnabled="false"
+
+        android:paddingTop="20dp" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorPrimaryDark">
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="51dp"
+            android:layout_height="51dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/round_button_bar"
+            android:padding="10dp"
+            android:src="@drawable/ic_music_note_black_24dp" />
+
+
+        <LinearLayout
+            android:id="@+id/linear_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/imageView4"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/title_tv_bar"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="7dp"
+                android:maxLines="1"
+                android:text="Title"
+                android:textColor="#ffffff"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/album_tv_bar"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:maxLines="1"
+                android:text="Album"
+                android:textColor="#ffffff"
+                android:textSize="10dp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/play_bar"
+            android:layout_width="51dp"
+            android:layout_height="51dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@id/linear_layout"
+            android:background="@drawable/round_button_bar"
+            android:padding="10dp"
+            android:src="@drawable/ic_play" />
+
+        <ImageButton
+            android:id="@+id/next_bar"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="12dp"
+            android:layout_toRightOf="@id/play_bar"
+            android:background="@drawable/round_button_bar"
+            android:padding="5dp"
+            android:src="@drawable/ic_skip_left" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

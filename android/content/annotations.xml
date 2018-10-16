@@ -1,0 +1,9 @@
+<root>
+    <item name='android.content.Context TELEPHONY_SERVICE'>
+        <annotation name='java.lang.Deprecated' />
+        <annotation name='android.support.annotation.NonNull' />
+    </item>
+    <item name='android.content.ContextWrapper java.lang.Object getSystemService(java.lang.String)'>
+        <annotation name='java.lang.Deprecated' />
+    </item>
+</root>
